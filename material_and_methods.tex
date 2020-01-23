@@ -5,35 +5,67 @@
 \chapter{Material and Methods}
 
 \section{General information}
-All the liquids that will be in contact with the cell, are pre-warmed to limit cold-exposure.
-\myworries{Write the sentence from Semester Project where I comment about where the products come from.}
+All the liquids that will be in contact with the cell, are pre-warmed to limit cold-exposure. All chemicals were of analytic grade and were used as received from the suppliers without further purification. 
 More in-depth methods description can be found in the annex to this paper \myworries{TODO!}
-Unless specifically stated otherwise, we worked under sterile conditions (Biosafety Level 1) inside the hood. 
+Unless specifically stated otherwise, we worked under sterile conditions (Biosafety Level 1). 
+By courtesy of Dr. Ulrich Blache, we had access to human bone-marrow derived mesenchymal stem cells.They were cultured through\ldots Tenoncytes were provided by Balgrist Hospital, after patient acceptance
+
+\section{Cell Culture}
+
+Cells are grown in growth medium (MEM$\alpha$, + 10\% FBS and 1\% Pen/Strep) under sterile conditions. We changed the medium every three days and split the cell at $>$ 80\% confluence. 
+They are grown in T75 Cell Culture Flasks (\product{Thermo Fisher, CN: 156499}) in an incubator with constant conditions of 37$^{\circ}$ C and 5 Percent CO2. Growth Medium consist of MEM$\alpha$ with nucleosides (\product{Thermo Fisher, CN: 22571020}), 10\% FBS and 5ng/ml Growth Factor FGF-2 (\myworries{Product Number}).
 
 \section{Generation of Knock-Out Cell Lines}
 \myworries{Basically include KO Protocol, write only things necessary, without missing the most important part.}
 
-\section{Cell Culture}
-By courtesy of Dr. Ulrich Blache, we had access to human bone-marrow derived mesenchymal stem cells. They are grown in T75 Cell Culture Flasks (\product{Thermo Fisher, CN: 156499}) in an incubator with constant conditions of 37$^{\circ}$ C and 5 Percent CO2. Growth Medium consist of MEM$\alpha$ with nucleosides (\product{Thermo Fisher, CN: 22571020}), 10\% FBS and 5ng/ml Growth Factor FGF-2 (\myworries{Product Number}).
+\section{RNA Extraction}
+This was prepared in open space. 
+Cells were either directly lysed in-well after PBS washing or lysed in the tube, after being collected from well and washed with PBS with Lysis buffer containing \textbeta-mercaptoethanol. The whole cell lysate was then prepared using the PureLink PCR Micro Kit (\product{Thermo Fisher, CN: K310250}) following manufacturer's protocol, dissolving the RNA in the final step with 20\mul of RNase-free Water. The final RNA concentration was measured using the Qubit RNA HS Assay Kit (\product{Thermo Fisher, CN: Q32852}). 
+
+\section{Reverse Transcription into cDNA}
+This was prepared in open space. Unless stated otherwise we transcribed 300ng of RNA per 40\mul total reaction volume using the High-Capacity cDNA Reverse Transcription Kit (\product{Thermo Fischer, CN: 4368813}) following supplier's instructions. For each sample prepare one tube containing 300ng of sample RNA in 20\mul of RNase-free Water. Prepare general \textsc{MasterMix}(2X) consisting of dNTP, Random Primer, RT Buffer, MultiScribe and RNase-free Water. Add 20\mul of \textsc{Master Mix} to each tube. \myworries{Insert program specification of Cindy Thermal Cycler (MasterCycler, Eppendorf)} to converse total RNA to single stranded cDNA. Samples were either stored at -20 deg Celsius or used on the same day. 
 
 \section{qRT-PCR}
+\begin{itemize}
+    \item Primer prepared, always on ice
+    \item 8\mul of Primer, 2\mul of cDNA in a 96-well plate, while having triplicates \myworries{Producer}
+    \item template cDNA was amplifid by\ldots
+    \item TaqMan-Primers used were\ldots
+    \item Data analysis was done with 2$^{-\Delta\Delta Ct}$-Method
+\end{itemize}
+
+
 
 \section{Western Blots}
+This was prepared in open space. 
+Cell pellet was dissolved in 20\mul \textsc{Ripa}-Buffer and kept on ice during the whole time until cooking. After letting it incubate in \textsc{Ripa} for 20 minutes, we put the sample in the 4 deg Celsius centrifuge at maximum speed for 10 minutes. Transfer the supernatant in new tube, discard old tube. Measure protein concentration of all samples by employing the Bio Rad DC Protein Assay, following the manufacturer's protocol and comparing it to my personal standard curve \myworries{Link to Appendix}. Then normalized while maximizing protein content (i.e. dilute with RIPA all samples to match concentration of lowest concentration sample). In new tube mix 13\mul{ }of Sample with 2.5\mul{ }of Laemmli-Buffer(6X) (Dilution-Error: $<$ 4\%), vortex 5 seconds and then cook for 4-8 minutes at 95 deg Celsius in ThermoCycler (i.e. cooking). Then separate sample by SDS-PAGE (Used gel: 4–15\% Mini-PROTEAN TGX Stain-Free Protein Gel \product{Bio Rad, CN: 4568083} and constant current of 35 mA), then transferred onto PVDF Membrane. The membrane was then blocked in 5 wt\% low fat dry-milk in TBST (i.e. blocking solution) for 1 hour. This is followed by incubation primary antibody for 2 hours and subsequent incubation in matching secondary antibody for 1 hour. Every time after immersion medium changes, we washed the membrane for 10 minutes in TBST. Ultra enhanced chemiluscence HRP substrate \myworries{Find this CN} has been used to produce a signal in machine \myworries{What machine}. Exposure time was manually adjusted to produce a representative picture of the samples at hand. Quantification was done with Fiji (version 2.0.0-rc-69, Java 1.8) using the macro \myworries{What? }
+
+\myworries{Here come up with a sexy representation. Maybe colour code PoI}
+
 
 \section{Chemical stimulation of \Piezo with \Yoda}
 
-First we seeded hBM-MSC (120'000 Cells/ml, 2 ml per 9cm\textsuperscript{2}-Well ), with only MEM$\alpha$, serum free and without FGF-2 and left them in the incubator \myworries{TODO} to let them adhere to the surface for 8-14h. Half an hour before intervention, we incubated an adequate amount of medium in the incubator, to limit differences of dissolved gases. Afterwards, we discarded the medium, washed the cells with $> 2.5$ ml PBS and added the intervention medium (i.e. MEM$\alpha$ with either nothing (Control Group) or \myworries{5uM} Yoda1 (Piezo1-Activation Group)). Transfer to incubator for 30 minutes. Afterwards wash twice with PBS and then add MEM$\alpha$ again. Harvesting after n$\times$24h, with n = 0,1,2 and 3. Exception: n = 0 (Day 0 Group) has only control group. 
+First we seeded hBM-MSC (120'000 Cells/ml, 2 ml per 9cm\textsuperscript{2}-Well ), with only MEM$\alpha$, serum free and without FGF-2 and left them in the incubator \myworries{TODO} to let them adhere to the surface for 8-14h. Half an hour before intervention, we incubated an adequate amount of medium in the incubator, to limit differences of dissolved gases. Afterwards, we discarded the medium, washed the cells with $> 2.5$ ml PBS and added the intervention medium (i.e. MEM$\alpha$ with either serum-free medium (negative control group) or \myworries{5\textmu{}M} \Yoda. Leave in incubator for 30 minutes. Afterwards wash twice, before adding MEM$\alpha$ again. Harvesting of both RNA and Protein samples after 0, 24, 48 and 72hours.\\ 
+RNA samples were harvested by washing them with PBS, before adding lysis buffer with \textbeta-mercaptoethanol. After 5 minutes add 1ml of MEM\textalpha{ }+10\% FBS per well, scrape the well surface with pipette tip and transfer the mixture into tube. Shock-freeze the lysate in liquid nitrogen. Harvesting of protein samples were done by washing with PBS, adding 0.5 ml of TE(1X) per well. Incubate it for 3-8 minutes. Add 1ml of blocking medium. Scrape with cell scraper (\myworries{Sarstedt, CN??? })  and transfer whole mixture in sample tube. Centrifuge at 2000 rcf for 5 minutes. Discard supernatant, add PBS, centrifuge again for 5 minutes at 2'000 rcf, then discard supernatant completely and shock-freeze tube in liquid nitrogen. 
 
 
 \section{Fluidic Shear Stress Model}
 
+This model allows for cell-agnostic seeding of adherent cells on grating with arbitrary feature space. It allows us to simulate fluidic shear stress of various magnitudes and with medium, that can be functionalized. During this project, we only quantified Ca2+-ion influx response, while cell recovery and subsequent biochemical analysis would also be possible. 
+
 \subsection{Flowchamber and seeding}
 
-\subsection{Fluorescence Staining}
+First we combine silicone \myworries{Product Name} and cross-linker \myworries{Product Name} and mix it vigorously. Then put in vacuum chamber to rid the gel of all bubbles. Put the gel in negative, metal rack, then vacuum again. Then on heating plate over night at 70 deg Celsius. After the microscopy slides underwent plasma treatment, we glue a stamp on the slide using the silicon-crosslinker-mixture from before. Then we put them over night next to the metal form on a heating plate. On the next day, remove the PDMS-stamps, leaving behind PDMS grating. Decorate the stamps with Collagen-1 \myworries{Product Number} using Sulfo-SANPAH as a crosslinker. Cut the flowchamber pieces and punch entry point for syringe. Prepare glue by adding 3\mul of \myworries{Platin Solution} to 1g of silicon, mix for 3 minutes. Add 0.1g of Crosslinker, mix again for 5 minutes. After Collagen-1 decoration is finished, glue PDMS-pieces on glass slide and put in oven at \myworries{40 deg C} for 45 minutes. Either we stored them in the fridge or seed cells for an experiment on the next day.\\
+For seeding, we work sterile and under aseptic conditions \myworries{?}. Flowchambers sterilized through generous use of 80\% \textsc{EtOH} (including flushing of chamber). Prepare cell solution of 1 Million Cells/ml (MEM\textalpha{ }with 10\% FBS and 5ng/ml FGF-2). Add approximately 700'000 cells per flowchamber. After 45 minutes flush the chamber to remove non-adherent cells. Put in incubator over night with the current \myworries{what} on the next day.
+
+
+\subsection{Fluorescence staining and imaging}
+In 2ml of Growth Medium dissolve 5\mul{} Fluo-4 (\myworries{Product Details}), resulting in staining medium. Define set of flowchambers (typically two), who are going to be imaged in 2 hours. Add 200\mul{} f staining medium per flow chamber and let it incubate until the start of the experiment. Minimise photobleaching by decreasing unnecessary light exposition. In a dark microscopy room, connect the flowchamber with a syringe that is fixed on the NemeSys syringe system (\myworries{Product Details}). The protocol used is stored in a \myworries{}. Imaging was done with chosen wavelength of \textlambda = 488 nm. Imaging was done by a Z-stack of 5 layers to account for shear-mediated displacement of cell. Once imaging was done, we projected the stacks in z-dimension using the average intensity method.  \\
+Note that in the extracellular Ca-influx experiment we flushed the flowchamber for 12 minutes (equivalent to 2.4ml medium) with normal ACSF to normalise (\myworries{?}).
+
+\myworries{ToDo: Name Software LiveAc, version number}
 
 
 
 \subsection{Processing and evaluation}
-
-\section{Features}
 
