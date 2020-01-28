@@ -13,10 +13,10 @@ Cells are grown in growth medium \myworries{Recipe Distribuition} (MEM$\alpha$, 
 They are grown in T75 Cell Culture Flasks (\product{Thermo Fisher, CN: 156499}) in an incubator with constant conditions of 37$^{\circ}$ C and 5 Percent CO2. Growth Medium consist of MEM$\alpha$ with nucleosides (\product{Thermo Fisher, CN: 22571020}), 10\% FBS and 5ng/ml Growth Factor FGF-2 (\myworries{Product Number}).
 
 \section{Generation of Knock-Out Cell Lines}
-\myworries{Basically include KO Protocol, write only things necessary, without missing the most important part.}
+\myworries{Basically include KO Protocol.}
 
 \section{RNA Extraction}
-This was prepared in open space. Cells were either directly lysed in-well after PBS washing or lysed in the tube, after being collected from well and washed with PBS. Our Lysis-Buffer contains \textbeta-mercaptoethanol. The whole cell lysate was then prepared using the PureLink PCR Micro Kit (\product{Thermo Fisher, CN: K310250}) following manufacturer's protocol, dissolving the RNA in the final step with 20\mul of RNase-free Water. The final RNA concentration was measured using the Qubit RNA HS Assay Kit (\product{Thermo Fisher, CN: Q32852}). 
+This was prepared in open space. Cells were either directly lysed in-well after PBS washing or lysed in the tube, after being collected from well and washed with PBS. Our Lysis-Buffer contains 1\% \textbeta-mercaptoethanol. The whole cell lysate was then prepared using the PureLink PCR Micro Kit (\product{Thermo Fisher, CN: K310250}) following manufacturer's protocol, dissolving the RNA in the final step with 20\mul of RNase-free Water. Alternatively, the lysate can also be frozen at -80 deg C for later processing. The final RNA concentration was measured using the Qubit RNA HS Assay Kit (\product{Thermo Fisher, CN: Q32852}). 
 
 \section{Reverse Transcription into cDNA}
 This was prepared in open space. Unless stated otherwise we transcribed 300ng of RNA per 40\mul total reaction volume using the High-Capacity cDNA Reverse Transcription Kit (\product{Thermo Fischer, CN: 4368813}) following supplier's instructions. For each sample prepare one tube containing 300ng of sample RNA in 20\mul of RNase-free Water. Prepare general \textsc{MasterMix}(2X) consisting of dNTP, Random Primer, RT Buffer, MultiScribe and RNase-free Water. Add 20\mul of \textsc{Master Mix} to each tube. \myworries{Insert program specification of Cindy Thermal Cycler (MasterCycler, Eppendorf)} to converse total RNA to single stranded cDNA. Samples were either stored at -20 deg Celsius or used on the same day. 
@@ -36,7 +36,7 @@ This was prepared in open space. Unless stated otherwise we transcribed 300ng of
 This was prepared in open space. 
 Cell pellet was dissolved in 20\mul \textsc{Ripa}-Buffer and kept on ice during the whole time until cooking. After letting it incubate in \textsc{Ripa} for 20 minutes, we put the sample in the 4 deg Celsius centrifuge at maximum speed for 10 minutes. Transfer the supernatant in new tube, discard old tube. Measure protein concentration of all samples by employing the Bio Rad DC Protein Assay, following the manufacturer's protocol and comparing it to my personal standard curve \myworries{Link to Appendix}. Then normalized while maximizing protein content (i.e. dilute with RIPA all samples to match concentration of lowest concentration sample). In new tube mix 13\mul{ }of Sample with 2.5\mul{ }of Laemmli-Buffer(6X) (Dilution-Error: $<$ 4\%), vortex 5 seconds and then cook for 4-8 minutes at 95 deg Celsius in ThermoCycler (i.e. cooking). Then separate sample by SDS-PAGE (Used gel: 4–15\% Mini-PROTEAN TGX Stain-Free Protein Gel \product{Bio Rad, CN: 4568083} and constant current of 35 mA), then transferred onto PVDF Membrane. The membrane was then blocked in 5 wt\% low fat dry-milk in TBST (i.e. blocking solution) for 1 hour. This is followed by incubation primary antibody for 2 hours and subsequent incubation in matching secondary antibody for 1 hour. Every time after immersion medium changes, we washed the membrane for 10 minutes in TBST. Ultra enhanced chemiluscence HRP substrate \myworries{Find this CN} has been used to produce a signal in machine \myworries{What machine}. Exposure time was manually adjusted to produce a representative picture of the samples at hand. Quantification was done with Fiji (version 2.0.0-rc-69, Java 1.8) using the macro \myworries{What? }
 
-\myworries{Here come up with a sexy representation. Maybe colour code PoI}
+\myworries{Here come up with a sexy representation. Maybe colour code Proteins of Interest}
 
 
 \section{Chemical stimulation of \Piezo with \Yoda}
@@ -64,3 +64,8 @@ Note that in the extracellular Ca-influx experiment we flushed the flowchamber f
 
 \subsection{Processing and evaluation}
 
+\begin{itemize}
+    \item n flowchambers per sample lead to pooled 3$\times$240 array, carrying [Mean, S(N), N]. In order to not overestimate influence of samples because of increased cell count, we normalised before comparing donor's.
+    \item An archived version of the macros used can be accessed on a link.
+    \item Maximum Values for peak-comparison were found by doing a maximum-search on the whole measurement interval. (Leading to maximum before stimulus in CaFree-measurements in some samples.)
+\end{itemize}
