@@ -1,20 +1,28 @@
 \chapter{Results and Discussion}
 
 \section{Piezo1 as integrator of biomechanical events}
-Piezo1 has been established as important mechanotransductive element \cite{Murthy2017PiezosTU} \myworries{Two Papers from Mendeley} in a plethora of different physiological contexts. Here we address the issue of transferability and try to determine, whether Piezo1 is equally important in the mechanosensing by mesenchymal stem cells.\\
-For each biological replicates we have at least 3 different flowchambers as technical replicates. Reasons for possible exclusion of a measurement were either movement artefacts in between measurements or the compromised integrity of the flowchamber at hand. Segmentation was done once per sample at the beginning. After image processing, all samples from the same donor were pooled. The protocol of the calcium imaging can be found \myworries{Where?}\\
+Piezo1 has been established as important mechanotransductive element \cite{Murthy2017} \cite{Gudipaty2017} in a plethora of different physiological contexts. Here we address the issue of transferability and try to determine, whether Piezo1 is equally important in the mechanosensing by mesenchymal stem cells.\\
+For each biological replicates we have at least 3 different flowchambers as technical replicates. Reasons for possible exclusion of a measurement were either movement artefacts in between measurements or the compromised integrity of the flowchamber at hand. Segmentation was done once per sample at the beginning. After image processing, all samples from the same donor were pooled. The protocol of the calcium imaging can be found.
+
+\begin{figure}
+    \centering
+    \includegraphics[width = 0.7\textwidth]{Combined_CalciumFree_KnockOut.png}
+    \caption{Piezo1-mediated influx of extracellular Ca2+ confirmed as mechanotransductory event in response to shear. a.) Calcium-influx in response to fluidic shear pulse of 5s with an amplitude of 7Pa is significantly lower in Piezo1-KO cell lines, when compared to No Target-KO cell line. (Data points describe technical replicates, ***p$<$0.001) b.) Same data as a. with time-curve plotted shows that KO-constructs pooled exhibit lower peaks and less area under the curve when comparing to No Target-KO cell line. c.) Pronounced increase in measured fluorescence in response to shear stimulus, comparing calcium-containing to calcium-deprived medium. (n = 3, *p $<$ 0.05, Student's t-test) d.) Representative donor measurement of medium comparison shows complete lack of calcium-influx response after shear stimulus with calcium-free medium as opposed by calcium-containing response. (Data contains pooled data of 4 technical replicates and is mean $\pm$ SEM)}
+    \label{fig:Calcium}
+\end{figure}
 
 \subsection{MSC's and shear}
-Making use of in-house developed flowchambers, we measured an increase of maximal relative fluorescence levels directly relating to shear stress. This supports the notion of calcium influx as immediate reaction to shear in mesenchymal stem cells, similar to what we would expect in tendon. Follow up experiments with two Piezo1 knock-out cell lines (P1-395, P1-555) indicated that Piezo1 is the main trigger, as calcium-response was largely lacking when compared to negative control (No Target KO Cell line) \\ \myworries{Insert Fabian's graph with KO Cell lines}
+Making use of in-house developed flowchambers, we measured an increase of maximal relative fluorescence levels directly relating to shear stress. This supports the notion of calcium influx as immediate reaction to shear in mesenchymal stem cells, similar to what we would expect in tendon. Follow up experiments with two Piezo1 knock-out cell lines (P1-395, P1-555) indicated that Piezo1 is the main trigger, as calcium-response was largely lacking when compared to negative control (No Target KO Cell line)
 
 \subsection{Functionalization of Medium}
 The insight from before relies on the assumption of the calcium-ion-influx being a primary consequence of Piezo1 opening, as opposed by the hypothesis that activate Piezo1 channels might elicit a secondary reaction, like release of ionic calcium that is stored in the endoplasmatic reticulum. To test this assumption, we designed an experiment, with the medium as the experimental condition.\\
-Flushing the same flowchamber twice, one time with calcium-free ACSF and another time with normal ACSF, we saw an average of 40\% increase in measured $F_{max}/F_{0}$ levels in the second measurement, without a detectable signal during the Calcium-free Measurement ($n=3$ biological replicates).\par
+Flushing the same flowchamber twice, one time with calcium-free ACSF and another time with normal ACSF, we saw an average of 40\% increase in measured $F_{max}/F_{0}$ levels in the second measurement, while a detectable signal during the measurement with calcium-free ACSF was missing .\par
 
 To conclude, this result combined with the results from before shows that not only do MSC also feel shear stress, but the associated extracellular calcium ion influx is \Piezo mediated. 
 
 \subsection{Caveats}
 The main assumptions that deserve special mention are twofold: The Shear Protocol and the Protocol to increase cellular adherence. \par
+While we succeeded in showing the Piezo1-mediated shear susceptibility of MSC, we should not fall victim to the fallacy of the amplitude representing a physiological stimulus. 
 
 \textsc{Shear protocol}\\
 a. physiological context. Fluidic shear more likely to simluate endothelial blood interplay.\\
@@ -37,6 +45,7 @@ In parallel, we also looked at mRNA representation through qRT-PCR, where we bia
 and Interleukin-6 to confirm our prior results.  All measurements were normalised against negative control samples which where harvested immediately after the intervention ended.\\
 While we were not able to produce a significant result in any time point or gene, we saw a tendency of decreasing \colone. Sadly, due to time constrictions related to the duration of this thesis, we were not able to produce more data points. It is likely to produce a significant result with increasing sample size. On the other hand, the RNA levels diverged reproducibly from identical protein samples.
 
+
 This discrepancy between Protein and mRNA is especially curious, when considering the natural sequence of Gene $>$ RNA $>$ Protein, after a transcriptional change. Intuitively, mRNA precedes Protein, meaning a change in transcription would first be seen in RNA levels, with Protein lagging behind, 
 something to consider in knock-out studies. However, it seems to not be given here. While some adaptation on mRNA-levels could also happen (look at:  \colone), the clear finding from the Western Blots is remarkably not translated in RNA. The assumption often made in other works,\myworries{Insert other sources that do this.} that RNA and protein are congruent is heavily violated here. qRT-PCR analysis adds evidence that speaks against the degradation of RNA as explanation for the effect seen in Protein analysis. 
 
@@ -44,8 +53,6 @@ This result is both unexpected and intriguing. The divergence between results fr
 
 \begin{itemize}
      \item  Caveat: Likely differentiation during experiment. FGF-2 (fibroblast growth factor, known for suppressing ECM-production \myworries{[citation needed]}) not present during experiment, but during whole cell culture. Same thing with FBS. 
-     
-     \item Maybe Calcium itself leads to degradation
     
     \item Reversibility experiment shows lacking recovery from Yoda-stimulus. Even when FBS is administered after 3-day period.
 \end{itemize}
@@ -56,12 +63,12 @@ This result is both unexpected and intriguing. The divergence between results fr
     \centering
     \includegraphics[scale = 0.6]{Collection.png}
     \caption{
-    PCR Experiments where we saw some really cool stuff happening.
-    \textbf{a}: \colone{ }
-    \textbf{b}: Interleukin 6
-    \textbf{c}: \colthree{ }
+    Modest adaptation on transcriptional level as consequence of Piezo1-Activation. \hfill \newline
+    \textbf{a}: \colone{}
+    \textbf{b}: IL-6
+    \textbf{c}: \colthree{}
     \textbf{d}: \textsc{Fn}1
-    All Experiments were n = 4. 
+    All Experiments: n = 4. 
     }
     \label{fig:my_label}
 \end{figure}
@@ -73,10 +80,10 @@ This result is both unexpected and intriguing. The divergence between results fr
   \caption{svg image}
 \end{figure}
 
-
-
 \section{Piezo1 and osteogenic differentiation}
 Here I'm basically going to mention that due to long-term nature of the effect we suspected differentiation. Since Proteins investigated are heavily implicated with Osteogenic differentiation, we looked into osteogenic differentiation. Enter Graph. Even though some tendency can be seen, results of those markers are not significant. 
+
+\section{Reversibility of Yoda1-activation}
 
 
 \section{Excursion: Biostability of Yoda1 and Piezo1 mediated apoptosis}
