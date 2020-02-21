@@ -5,20 +5,7 @@
 \myworries{How does the peak relate to flow rate? Is there saturation?}
 It is well known, that stem cell migration, differentiation and self-renewal is significantly influenced by physical interaction between the cell and the surrounding physical microenvironment. [Eyckmans2011][Lee2011] MSCs are arguably the most thoroughly studied type of stem cell in the context of mechanobiology, possibly because of relative ease of access and the promising potential they hold for regenerative medicine. Extensive studies of different properties of forces (e.g. nature, amplitude, oscillation) on MSCs give great insight into the reach of this underappreciated contribution to cell guidance. However, the significance of \Piezo{} and the associated calcium-ion influx in MSC mechanosensing is not fully understood. In the following part we want to elucidate whether \Piezo{} is functionally able to elicit a significant intracellular signal in MSCs.\\
 In a reductionist approach, we conclude a significant contribution of \Piezo{} given MSCs exhibit a \Piezo{}-mediated influx of extracellular calcium ions in response to force. \\
-For our first experiment, Flowchambers were prepared with wild-type (WT) cells being seeded and stained as described in \myworries{PUT REFERENCE}. For each flowchamber two calcium imaging recordings were carried out in close temporal sequence to each other: First recording was done using the previously mentioned flow rate protocol executed with modified, calcium-free ACSF as flow shear medium. Upon completion of the first recording, the flow shear medium is exchanged for normal, calcium containing ACSF and the cells flushed for 12 minutes with a flow rate of 0.2ml/min. After the 12 minute flushing period has ended, a second recording was done with the previously used flow rate protocol. After both measurements were completed, the integrity of the flowchamber was assessed by eye and the measurement deemed qualified for analysis, when no violation of structural integrity was observed. The sequence of first calcium-free and second calcium-containing medium is important, as reactive capability of the cells has to be demonstrated in the last measurement to rule out cell death as a possible explanation for lack of impulse response. We then processed the d
-
-\begin{itemize}
-
-    \item Increase of up to 80\% in fluorescence levels in pulse response. Significant difference in impulse response
-
-    \item Two phenomena: Small negative bump (decrease in fluorescence) in pulse response and discontinuous jump between measurements.
-    \item Bump: Fluorescent particles, non-adherent. When pulse, swept away, rigid segmentation only sees drop of fluorescence. The nature of those particles could either be exogenous particle with inherent properties that lead to higher measured fluorescence levels or there is a correlation between high intracellular calcium-ion level cells and adherence. Since effect size too small we did not investigate further.
-    \item Missing calcium-signal after application of shear stimulus, if no external calcium-ions are supplied. 
-    \item shows complete lack of calcium-influx response after shear stimulus with calcium-free medium as opposed by calcium-containing response. 
-    \item Discontinuity: Possibly cells overcompensating the intracellular Calcium-stores when provided extracellular Calcium.
-    \item Continuously decreasing fluorescence: Photobleaching! Keep in mind that second signal is likely higher.
-    
-\end{itemize}
+For our first experiment, Flowchambers were prepared with wild-type (WT) cells being seeded and stained as described in \myworries{PUT REFERENCE}. For each flowchamber two calcium imaging recordings were carried out in close temporal sequence to each other: First recording was done using the previously mentioned flow rate protocol executed with modified, calcium-free ACSF as flow shear medium. Upon completion of the first recording, the flow shear medium is exchanged for normal, calcium containing ACSF and the cells flushed for 12 minutes with a flow rate of 0.2ml/min. After the 12 minute flushing period has ended, a second recording was done with the previously used flow rate protocol. After both measurements were completed, the integrity of the flowchamber was assessed by eye and the measurement deemed qualified for analysis, when no violation of structural integrity was observed. The sequence of first calcium-free and second calcium-containing medium is important, as reactive capability of the cells has to be demonstrated in the last measurement to rule out cell death as a possible explanation for lack of impulse response. We then concatenated the two measurements and let them \myworries{!finish at home, explain code pipeline}. We saw a maximum increase of up to 80\% in fluorescence signal in direct response to shear pulse as opposed to no or slightly negative pulse response in the calcium-free measurement. While the amplitude is likely a function of intracellular state, laminar flow defects and flowchamber and grating specific random errors, thus varying over different biological donors, we still see a clear-cut necessity of extracellular calcium-ion presence for successful impulse response. Surprisingly, the shear flow pulse seems to have a negative effect on fluorescence levels of the cell, as illustrated by the bump \myworries{Fig Reference}. We argue that this is likely a technical issue resulting from a combination of loosely-adherent highly fluorescent particles segmented as a cell and the static nature of our segmentation method. During the flow pulse, the particles are swept away, leaving only non-fluorescent substrate and thus leading to an incorrect classification of a decrease in fluorescence. A second technical issue is the discontinuity in apparent fluorescence between the two measurement, with the second measurement starting shy above a ratio of one. We argue this is due to the calcium-starved cell increasing the calcium-influx after resupplying them with extracellular calcium-ions during the flushing period. As this bias corresponds to maximally \myworries{XX}\% of the fluorescence response, we did not correct for this error. Another minor technicality is the slightly negative slope of the baseline. This corresponds to the known property of fluorescent markers to decrease in fluorescence as a function of light exposure, and is called Photobleaching. As the effect is likely neglibible, it is still important to keep in mind, that the signal in the second measurement likely would be slightly higher, since it has the added effect from the first measurement's photobleaching.
 
 \begin{figure}
     \centering
@@ -27,10 +14,10 @@ For our first experiment, Flowchambers were prepared with wild-type (WT) cells b
     \label{fig:Calcium}
 \end{figure}
 
-We demonstrated that MSCs exhibit reactive mechanosensitive capabilities through force-mediated rapid onset influx of extracellular Calcium-ions. The role of \Piezo{} in this process, however, is not defined. To shed light on the contribution size of \Piezo{} we compared the impulse response capabilities of two distinct \Piezo{}-knock out constructs to a control cell line.\\
+We demonstrated that MSCs exhibit reactive mechanosensitive capabilities through force-mediated rapid onset influx of extracellular calcium-ions. The role of \Piezo{} in this process, however, is not defined. To shed light on the contribution size of \Piezo{} we compared the impulse response capabilities of two distinct \Piezo{}-knock out constructs to a control cell line.\\
 In preparation for this experiment three transfected cell lines were generated (2 distinct \Piezo{} knock-out's and one negative control) using pre-made lentivirus, carrying a CRISPR/Cas9-system with puromycin resistance as the selection marker. The grouping is specified through the Lentiviral Construct used, resulting in cell line P1-395 (Deletion at \myworries{Ask MATTHIAS}), P1-555 and NoT (No Target, Control for the viral treatment with no putative genome mutation).  In order to assess knock-out efficiency, both Western Blot and qRT-PCR were done not more than one passage after thawing, to avoid overestimation of knock-out efficiency as it likely increases with growing passages. With an knockout efficiency on mRNA-level of XX\% in P1-395 and XX\% in P1-555 and a corresponding knockout-efficiency on protein-level of XX\% in P1-395 and XX\% in P1-555, respectively, we can consider this cell line a valid knock-out model. \myworries{Add efficiency numbers of knockout} 
 
-We then seeded cells in flowchambers and measured the intracellular calcium signal of the cells in response to a shear pulse, similar to the protocol from the previous experiment but only with a single measurement per flowchamber with normal ACSF as shear flow medium. Intriguingly, the knock-out cells show a significantly reduced reaction capability when compared to control. \myworries{FigReference} When comparing the relative amount of cells that exhibit calcium-influx in response to shear stress, we see a 66\% decrease when comparing knock-out cells with control, with the effect being bigger in P1-395 (-73\%) as in P1-555 (-60\%). Interestingly, this difference between two different constructs regarding  their reduction of impulse response correlates well with the knock-out efficiency. Figure 3.b, which shows the same data, but over full temporal resolution illustrates how the area under the curve is largely reduced when \Piezo{} is knocked out. Modelling of the channel dynamics using a simple statistical model shows that, the decay mechanics largely stay the same with only the amplitude changing to lead to this result, or differently put: The model suggests that there is no compensating adaptation of single channel mechanics in response to lower channel abundance.
+We then seeded cells in flowchambers and measured the intracellular calcium signal of the cells in response to a shear pulse, similar to the protocol from the previous experiment but only with a single measurement per flowchamber with normal ACSF as shear flow medium. Intriguingly, the knock-out cells show a significantly reduced reaction capability when compared to control. \myworries{FigReference} When comparing the relative amount of cells that exhibit calcium-influx in response to shear stress, we see a 66\% decrease when comparing knock-out cells with control, with the effect being bigger in P1-395 (-73\%) as in P1-555 (-60\%). Interestingly, this difference between two different constructs regarding their reduction of impulse response correlates well with the knock-out efficiency. Figure 3.b, which shows the same data, but over full temporal resolution illustrates how the area under the curve is largely reduced when \Piezo{} is knocked out. Modelling of the channel dynamics using a simple statistical model shows that, the decay mechanics largely stay the same with only the amplitude changing to lead to this result, or differently put: The model suggests that there is no compensating adaptation of single channel mechanics in response to lower channel abundance.
 
 \myworries{WHY CHANGES OF METRICS? Cells that show Calcium Signal vs Max Fluorescence... Homogenize?}
 
@@ -73,8 +60,28 @@ While the results were surprising, follow-up studies are required before we can 
   \caption{Collagen 1 alpha 1 is reduced }
 \end{figure}
 
+\section{Reversibility and osteogenic differentiation}
 
-\section{\Piezo and osteogenic differentiation}
+As we saw that intracellular \colone{} remained low on the protein level and was decreasing on the RNA level at the end of our experimental time frame, we wanted to investigate whether the cells would be able to recover and reach a pre-intervention homeostatic state eventually. For this reason, we decided to repeat the experiment from before, but only harvesting the cells after seven days (168 hours). Because in the experiment before we saw qualitatively a steady decrease in cell viability exhibited by morphological changes in \Yoda{}-treated samples\myworries{input figure reference}, we adapted the protocol. In order to allow for sufficient cell survival  until we would harvest the cell for analysis, we changed the medium three days after the intervention. Half of the cells received serum-free MEM\textalpha{} (denoted by S-), whereas the other half was administered MEM\textalpha{} with 10\% FBS (denoted by S+).\\
+Interestingly, in our experiment the RNA levels of \colone{} was still drastically lowered independent from FBS supplementation, with as low as 12\% in the serum-starved group  when comparing the \Yoda{} to control sample, both from day 7. While \colthree{} was also low, it is important to note the great variance of \colthree{} expression in the experiment before \myworries{Enter reference}, only allowing limited gain of information at best. IL-6 and \textsc{Fn}1 was slightly reduced. However, due to the experiment being a single measurement, there is only very limited knowledge gain in this experiment. 
+
+\begin{itemize}
+    \item RNA levels don't differ too much between serum-supplementation groups. Cell Viability and Multiplication however is greatly increased in Serum+ - samples, which is also reflected in the RNA yield size. This way we could accommodate longer experimental time frames, since relaxation could happen, but we just need to increase our time frame. Additionally, it would allow us to do Western Blots which typically need bigger yields to get a better picture. 
+\end{itemize}
+
+One alternative explanation would be that the applied \Yoda{}-stimulus lead to a persistent change and possibly to differentiation. MSCs hold the potential for various lineage choices like adipocyte differentiation differentiation for all sorts of differentiation
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width = \linewidth{}]{LongTerm_CellPicture.png}
+    \caption{
+    Morphological comparison of cells under different culture conditions. This was taken on day 7 of the long-term experiment
+    }
+    \label{}
+\end{figure}
+
+
+
 
 \begin{figure}[htbp]
   \centering
@@ -82,20 +89,12 @@ While the results were surprising, follow-up studies are required before we can 
   \caption{svg image}
 \end{figure}
 
-Something that is reported in literature Here I'm basically going to mention that due to long-term nature of the effect we suspected differentiation. Since Proteins investigated are heavily implicated with Osteogenic differentiation, we looked into osteogenic differentiation. Enter Graph. Even though some tendency can be seen, results of those markers are not significant. 
-
-\section{Reversibility of Piezo1-stimulation}
-
-
 \begin{figure}
     \centering
     \includesvg{Collective_Long_v1.svg}
-    \caption{Tendency of Yoda-effect still visible 7 days after intervention. After 3 days, medium was changed and either supplemented with 10\% FBS (denoted with S+) or serum-free (denoted with S-). (n = 1)}
+    \caption{Tendency of Yoda-effect still visible 7 days after intervention. (n = 1)}
     \label{fig:my_label}
 \end{figure}
-
-In this experiment we wanted to investigate whether the effects seen before would recover after some time and the cells enter a state of pre-intervention homeostasis. One technical issue that we had to solve in this experiment, was the fact that a significant amount of cells showed signs of distress and apoptosis after Yoda1-intervention. In order to allow for sufficient cell survival until we would harvest the cell for analysis, we adapted the protocol from the previous experiment, such that we changed the medium after three days. Half of the cells received serum free MEM\textalpha{}, whereas the other half was administered MEM\textalpha{} with 10\% FBS. 
-While we can clearly see that cells proliferate again in reaction to FBS, they don't seem to recover anymore from Piezo1-activation. \myworries{Wrong Text here}
 
 \section{Excursion: Biostability of Yoda1 and Piezo1 mediated apoptosis}
 \label{sec:biostability}
