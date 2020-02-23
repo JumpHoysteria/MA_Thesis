@@ -1,4 +1,0 @@
-cd C:\Users\alexmeie\Desktop\MA_Repo
-
-
-pandoc -f latex -t docx main.tex -o ThesisWord.docx
