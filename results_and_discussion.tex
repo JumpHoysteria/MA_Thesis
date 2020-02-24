@@ -6,17 +6,17 @@
 \myworries{How does the peak relate to flow rate? Is there saturation?}
 It is well known, that stem cell migration, differentiation and self-renewal is significantly influenced by physical interaction between the cell, its surrounding microenvironment and exogenous forces. \cite{Eyckmans2011, Lee2011}]MSCs are arguably the most thoroughly studied type of stem cell in this context, possibly because of the promising potential they hold for regenerative medicine and relative ease of access. Extensive studies of different force parameters (e.g. type, amplitude, static/dynamic) on MSCs give great insight into downstream pathways involved that guide the cells behaviour. However, the significance of \Piezo{} and the associated calcium-ion influx in MSC mechanosensing is not fully understood. In the following part we want to elucidate whether \Piezo{} is functionally able to elicit a significant intracellular signal in MSCs that can be classified as mechanotransductory significant.\\
 In a reductionist approach, we conclude a relevant contribution of \Piezo{} given MSCs exhibit a \Piezo{}-mediated influx of extracellular calcium ions in response to force. \\
-For our first experiment, Flowchambers were prepared with wild-type (WT) cells being seeded and stained as described in \myworries{PUT REFERENCE}. For each flowchamber two separate calcium imaging recordings were carried out in close temporal sequence to each other: The first recording was done using the previously mentioned flow rate protocol executed with modified, calcium-free ACSF as flow shear medium. Upon completion of the first recording, the flow shear medium is exchanged for normal, calcium containing ACSF and the cells continuously flushed for 12 minutes with a total volume of 2.4 ml. After the flushing period, a second recording was done with the previously used flow rate protocol but this time with normal ACSF. After both measurements were completed, the integrity of the flowchamber was assessed by eye and the recordings deemed qualified for analysis, when no violation of structural integrity was observed. The sequence of first calcium-free and second calcium-containing medium is important, as reactive capability of the cells has to be demonstrated in the last measurement to rule out cell death as a possible explanation for lack of impulse response. We then concatenated the two measurements and let them \myworries{!finish at home, explain code pipeline}. We saw a maximum increase of up to 80\% in fluorescence signal in direct response to shear pulse as opposed to no or slightly negative pulse response in the calcium-free measurement. While the amplitude is likely a function of intracellular state, laminar flow defects and flowchamber and grating specific random errors, thus varying over different biological donors, we still see a clear-cut necessity of extracellular calcium-ion presence for successful impulse response. Surprisingly, the shear flow pulse seems to have a negative effect on fluorescence levels of the cell, as illustrated by the bump \myworries{Fig Reference}. We argue that this is likely a technical issue resulting from a combination of loosely-adherent highly fluorescent particles segmented as a cell and the static nature of our segmentation method. During the flow pulse, the particles are swept away, leaving only non-fluorescent substrate and thus leading to an incorrect classification of a decrease in fluorescence. A second technical issue is the discontinuity in apparent fluorescence between the two measurement, with the second measurement starting shy above a ratio of one. We argue this is due to the calcium-starved cell increasing the calcium-influx after resupplying them with extracellular calcium-ions during the flushing period. As this bias corresponds to maximally \myworries{XX}\% of the fluorescence response, we did not correct for this error. Another minor technicality is the slightly negative slope of the baseline. This corresponds to the known property of fluorescent markers to decrease in fluorescence as a function of light exposure, and is called Photobleaching. As the effect is likely neglibible, it is still important to keep in mind, that the signal in the second measurement likely would be slightly higher, since it has the added effect from the first measurement's photobleaching.
+For our first experiment, Flowchambers were prepared with wild-type (WT) cells being seeded and stained as described in \vref{sec:FluidicModel}. For each flowchamber two separate calcium imaging recordings were carried out in close temporal sequence to each other: The first recording was done using the previously mentioned flow rate protocol executed with modified, calcium-free ACSF as flow shear medium. Upon completion of the first recording, the flow shear medium is exchanged for normal, calcium containing ACSF and the cells continuously flushed for 12 minutes with a total volume of 2.4 ml. After the flushing period, a second recording was done with the previously used flow rate protocol but this time with normal ACSF. After both measurements were completed, the integrity of the flowchamber was assessed by eye and the recordings deemed qualified for analysis, when no violation of structural integrity was observed. The sequence of first calcium-free and second calcium-containing medium is important, as reactive capability of the cells has to be demonstrated in the last measurement to rule out cell death as a possible explanation for lack of impulse response. We then concatenated the two measurements and let them \myworries{!finish at home, explain code pipeline}. We saw a maximum increase of up to 80\% in fluorescence signal in direct response to shear pulse as opposed to no or slightly negative pulse response in the calcium-free measurement. While the amplitude is likely a function of intracellular state, laminar flow defects and flowchamber and grating specific random errors, thus varying over different biological donors, we still see a clear-cut necessity of extracellular calcium-ion presence for successful impulse response. Surprisingly, the shear flow pulse seems to have a negative effect on fluorescence levels of the cell, as illustrated by the bump \myworries{Fig Reference}. We argue that this is likely a technical issue resulting from a combination of loosely-adherent highly fluorescent particles segmented as a cell and the static nature of our segmentation method. During the flow pulse, the particles are swept away, leaving only non-fluorescent substrate and thus leading to an incorrect classification of a decrease in fluorescence. A second technical issue is the discontinuity in apparent fluorescence between the two measurement, with the second measurement starting shy above a ratio of one. We argue this is due to the calcium-starved cell increasing the calcium-influx after resupplying them with extracellular calcium-ions during the flushing period. As this bias corresponds to maximally \myworries{XX}\% of the fluorescence response, we did not correct for this error. Another minor technicality is the slightly negative slope of the baseline. This corresponds to the known property of fluorescent markers to decrease in fluorescence as a function of light exposure, and is called Photobleaching. As the effect is likely neglibible, it is still important to keep in mind, that the signal in the second measurement likely would be slightly higher, since it has the added effect from the first measurement's photobleaching.
 
 \begin{figure}
 \centering
 \includegraphics[width = 0.7\textwidth]{Combined_CalciumFree_KnockOut.png}
 \caption{Piezo1-mediated influx of extracellular Ca2+ confirmed as mechanotransductory event in MSC. \hfill \newline 
-	\textbf{a.)} Representative fluorescence level measurement of impulse response with two different media where arrows mark the start of a 7Pa shear stress period of 5s. (Pooled data of 4 technical replicates, Data is mean $\pm$ SEM)	
-	\textbf{b.)} Peak values of fluorescence levels of samples in calcium-free and calcium-containing medium. (n = 3, *p $<$ 0.05, Student's t-test) 
-	\textbf{c.)} Temporally resolved fluorescence Signal of Piezo1-KO Cells compared to Control in response to 7 Pa shear period of 5s as denoted by arrow.  
-	\textbf{d.)} Relative amount of cells that showed fluorescence level impulse response. (Data points describe technical replicates, ***p$<$0.0001, ANOVA with Dunnette's multiple comparison test)}
-\label{fig:mediumchange}
+\textbf{a.)} Representative fluorescence level measurement of impulse response with two different media where arrows mark the start of a 7Pa shear stress period of 5s. (Pooled data of 4 technical replicates, Data is mean $\pm$ SEM)	
+\textbf{b.)} Peak values of fluorescence levels of samples in calcium-free and calcium-containing medium. (n = 3, *p $<$ 0.05, Student's t-test) 
+\textbf{c.)} Temporally resolved fluorescence Signal of Piezo1-KO Cells compared to Control in response to 7 Pa shear period of 5s as denoted by arrow.  
+\textbf{d.)} Relative amount of cells that showed fluorescence level impulse response. (Data points describe technical replicates, ***p$<$0.0001, ANOVA with Dunnette's multiple comparison test)}
+\label{fig:CalcImaging_Cells}
 \end{figure}
 
 We demonstrated that MSCs exhibit reactive mechanosensitive capabilities through force-mediated rapid onset influx of extracellular calcium-ions. The role of \Piezo{} in this process, however, is not defined. To shed light on the contribution size of \Piezo{} we compared the impulse response capabilities of two distinct \Piezo{}-knock out constructs to a control cell line.\\
@@ -59,8 +59,8 @@ While the results were surprising, follow-up studies are required before we can 
 \centering
 \includegraphics[width = 0.7\textwidth]{NormalYodaExp_WesternBlot_Col1a1.png}
 \caption{
-	\textbf{a.)} Representative Chemiluminescence for \colone with control and chemically stimulated \Piezo{}-samples with alpha-Tubulin as housekeeper.
-	\textbf{b.)} Quantification of repeated experiments, each data point normalized against housekeeping protein (loading correction) and corresponding d1, control-sample (donor-specific correction).}
+\textbf{a.)} Representative Chemiluminescence for \colone with control and chemically stimulated \Piezo{}-samples with alpha-Tubulin as housekeeper.
+\textbf{b.)} Quantification of repeated experiments, each data point normalized against housekeeping protein (loading correction) and corresponding d1, control-sample (donor-specific correction).}
 \label{fig:Yoda_Norm_WB}
 \end{figure}
 
@@ -75,36 +75,38 @@ Interestingly, in our experiment the RNA levels of \colone{} was still drastical
 One alternative explanation would be that the applied \Yoda{}-stimulus lead to a persistent change and possibly to differentiation. MSCs hold the potential for various lineage choices like adipocyte differentiation differentiation for all sorts of differentiation
 
 \begin{itemize}
-	\item Mention temporal shift in SPP1 and ALPL, but not RUNX2 (late- rather than early osteogenic markers)
+\item Mention temporal shift in SPP1 and ALPL, but not RUNX2 (late- rather than early osteogenic markers)
 \end{itemize}
 
 \begin{figure}[ht]
 \centering
 \includegraphics[width = \linewidth{}]{LongTerm_CellPicture.png}
 \caption{
-Light microscopy picture taken of cells seven days after 30min intervention with chemical \Piezo{}-agonist concentrations being either 0\textmu{}M (Yoda: -) or 5\textmu{}M (Yoda: +). Three days after intervention, medium was replaced with either serum-free MEM\textalpha{} (Serum: -) or MEM\textalpha{} supplemented with 10\% FBS MEM\textalpha{}.}
+Light microscopy picture taken of cells seven days after 30min intervention with either  0\textmu{}M (Yoda: -) or 5\textmu{}M (Yoda: +) chemical \Piezo{}-agonist. Three days after intervention, medium was replaced with either serum-free MEM\textalpha{} (Serum: -) or MEM\textalpha{} supplemented with 10\% FBS MEM\textalpha{} (Serum +).}
 \label{pic:Cells_LongTerm}
 \end{figure}
 
 
 \begin{figure}
-	\centering
-	\includegraphics[width=0.7\linewidth]{Uli_Blot_KO.png}
-	\caption{Western Blot of selected ECM components comparing protein content of different cell lines 3 days after 30min exposure to either 5\textmu{}M (Piezo +) chemical \Piezo{} agonist (Piezo +) or control  (\textalpha{}-Tubulin as housekeeping protein).}
-	\label{pic:UliBlot}
+\centering
+\includegraphics[width=0.7\linewidth]{Uli_Blot_KO.png}
+\caption{Western Blot of selected ECM components comparing protein content of different cell lines 3 days after 30min exposure to either MEM\textalpha{} only (negative control) or MEM\textalpha{} supplemented with 5\textmu{}M chemical \Piezo{} agonist (YODA +), \textalpha{}-Tubulin as housekeeping protein. (n=3, Student's t-test)
+}
+\label{pic:UliBlot}
 \end{figure}
 
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width = \linewidth]{Osteogenic_PCR_Yoda.png}
-\caption{mRNA transcript levels of different late and early osteogenic markers, comparing cells that had underwent 5\textmu{}M \Piezo{} agonist exposure for 30min compared to negative control.}
+\caption{mRNA transcript levels of different late and early osteogenic markers, comparing cells that had underwent 5\textmu{}M \Piezo{} agonist exposure for 30min compared to negative control. (n=3, Student's t-test)}
+\label{fig:Long_Term_PCR}
 \end{figure}
 
 \begin{figure}
 \centering
 \includegraphics[width = \linewidth{}]{LongTerm_PCR.png}
-\caption{mRNA levels of samples that have been harvested seven days after 30min 5\textmu{}M Yoda exposure normalized against corresponding negative control also harvested after seven days. We changed the media three days after samples where Yoda has been used and control for multiple gene products. (n = 1)}
+\caption{mRNA transcript levels of samples that have been harvested seven days after 30min 5\textmu{}M Yoda exposure normalized against corresponding negative control also from seven days post intervention. We changed the media three days after \Yoda intervention and supplemented the MEM\textalpha{} with either 0\% (Serum -) or 10\% FBS (Serum +). (n = 1)}
 \label{fig:LongTerm_PCR}
 \end{figure}
 
@@ -115,6 +117,6 @@ We realised that 3 days after the intervention, there was a large decrease in ce
 \begin{figure}
 \centering
 \includegraphics[width = \linewidth]{Yoda_Apoptosis.png}
-\caption{Light microscopy picture of cells 7 days after intervention both cultured serum-free. Observe the round, \myworries{apoptotic} morphology in the Yoda1-treated samples.}
-\label{fig:yoda_apop}
+\caption{Light microscopy picture of serum-starved cells 7 days after intervention with either 0\textmu{}M (negative Control) or 5\textmu{}M (Yoda) chemical \Piezo{}-agonist.}
+\label{pic:Yoda_Apop}
 \end{figure}
