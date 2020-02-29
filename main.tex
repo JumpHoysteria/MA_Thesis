@@ -13,6 +13,7 @@
 %% ========
 
 %% LaTeX Font encoding -- DO NOT CHANGE
+%\usepackage[OT1]{fontenc}
 \usepackage[OT1]{fontenc}
 
 %% Babel provides support for languages.  'english' uses British
@@ -31,6 +32,7 @@
 %% This changes default fonts for both text and math mode to use Herman Zapfs
 %% excellent Palatino font.  Do not change this.
 \usepackage[sc]{mathpazo}
+\usepackage{tgpagella}
 
 %% The AMS-LaTeX extensions for mathematical typesetting.  Do not
 %% remove.
@@ -58,6 +60,17 @@
 %% file, and consult the package docs for each.
 \input{extrapackages}
 
+%% Own Code - Alex
+%% ====================
+
+\usepackage{textgreek}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+%%\renewcommand{\title}[1]{\hline\textbf{#1}\hline}
+
+%% Document information
+%% ====================
 %% Our layout configuration.  DO NOT CHANGE.
 \input{layoutsetup}
 
@@ -72,21 +85,15 @@
 %% This MUST be loaded after varioref, which is loaded in 'extrapackages'
 %% above.  We just load it last to be safe.
 \usepackage[linkcolor=black,colorlinks=true,citecolor=black,filecolor=black]{hyperref}
-%% Own Code - Alex
-%% ====================
-\usepackage{titling}
-%%\renewcommand{\title}[1]{\hline\textbf{#1}\hline}
 
-%% Document information
-%% ====================
 
-\title{Piezo1 regulates homeostasis of extracellular matrix in mesenchymal stem cells}
+\title{Piezo1 contributes to homeostasis of extracellular matrix in mesenchymal stem cells}
 
 \author{Alexandre Meier}
 \thesistype{Master's Thesis}
-\advisors{Advisors: Prof.\ Dr.\ A. D. Visor, Dr.\ P. Ostdoc}
+\advisors{Advisors: Prof.\ Dr.\ Jess G. Snedeker, Dr.\ Ulrich Blache, Fabian Passini}
 \department{Department of Awesome}
-\date{January 99, 2099}
+\date{March 2\textsuperscript{nd}, 2020}
 
 \begin{document}
 
@@ -116,10 +123,6 @@
 \input{material_and_methods}
 \input{results_and_discussion}
 \input{outlook}
-
-%\input{rules}
-%\input{typography}
-
 
 \appendix
 
