@@ -27,7 +27,7 @@ In preparation for this experiment three transfected cell lines were generated (
 \begin{figure}
 	\centering
 	\includegraphics[width=\linewidth]{Piezo1KO_Verification_WBandPCR.png}
-	\caption{Validation of knockout on mRNA (left) and Protein (right) level. P1-395 describes cell line with deleted base in \PiezoGene{}-gene at position 395, similarly P1-555 describes deletion at position 555. NoT describes control for viral treatment with no putative mutation in genome. n = 1, for mRNA and Protein.}
+	\caption{Validation of knockout on mRNA (left) and Protein (right) level. P1-395 describes cell line with base deletion in \PiezoGene{}-gene at position 395, similarly P1-555 describes deletion at position 555. NoT describes control for viral treatment with no putative mutation in genome. Protein: n = 1, mRNA:  n$_{P1-395}$ = 2, n\textsubscript{P1-555, NoT} = 3.}
 	\label{fig:KO-Verification}
 \end{figure}
 
@@ -39,12 +39,11 @@ These results confirm that \Piezo{} is the main driver in force-mediated calcium
 
 Preliminary mass spectroscopy secretome analysis of \Yoda-treated stromal cells showed a distinct decrease in core extracellular matrix (ECM) components, such as alpha-1 type I collagen (\colone), Fibronectin-1 (FN1) and alpha-1 type III collagen (\colthree) (Not shown here, personal communication with Fabian Passini and Ulrich Blache). This led to further investigation into this matter.\par
 
-
 After seeding cells in serum-free medium and letting them rest, we chemically stimulated \Piezo{} with \Yoda{} during 30 minutes, before washing them and transferring them in the incubator again, following the protocol described earlier in section ~\vref{sec:ChemicalStimulation}. We then harvested control samples right after intervention (denoted by d0) and \Yoda{}- and control samples after 24, 48 and 72 hours (d1, d2 and d3, respectively) to achieve temporal resolution. \par
 
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width = 0.7\textwidth]{NormalYodaExp_WesternBlot_Col1a1.png}
+	\includegraphics[width = 0.9\textwidth]{NormalYodaExp_WesternBlot_Col1a1.png}
 	\caption{ Western Blot analysis of intracellular protein in \Yoda{}-treated MSCs over time (d1: 24h, d2: 48h, d3: 72h) compared to \Yoda{}-control samples harvested at the same time.
 		\textbf{a.)} Representative Chemiluminescence for \colone with control and chemically stimulated \Piezo{}-samples with alpha-Tubulin as housekeeper.
 		\textbf{b.)} Quantification of repeated experiments, each data point normalized against housekeeping protein (loading correction) and corresponding d1, control-sample (donor-specific correction) (Student's t-test with Holm-Sidak multiple comparison correction, Data is mean $\pm$ SD, Amount of protein loaded varies between \myworries{WHAT})}
@@ -61,14 +60,14 @@ After seeding cells in serum-free medium and letting them rest, we chemically st
 
 Western Blot Analysis of intracellular protein showed a trend of declining \colone-content in samples that have been treated with \Yoda{} (As shown in \ref{fig:Yoda_Norm_WB}). Furthermore, the effects were not only marked by fast onset but also of long-lasting nature, since the effect of a singular 30 minutes \Yoda{}-exposition remained the same three days after intervention. There were inconsistencies in our housekeeping protein bands, indicating possible loading problems. Similar effects can also be seen in \textsc{Fn1} and \colthree{} (see Figure~\vref{pic:UliBlot}.) \par
 
-Using qRT-PCR, we also looked at mRNA representation while focusing on \coloneGene{}, \colthreeGene{}, \Fn{} and \textit{Interleukin-6} (\IL{}) with \textit{GAPDH} and \textit{RPL13A} as house-keeping genes. All measurements were normalised against negative control samples harvested immediately after the intervention. \\
+Using qRT-PCR, we also looked at mRNA representation while focusing on \coloneGene{}, \colthreeGene{}, \Fn{} and \textit{Interleukin-6} (\ILGene{}) with \textit{GAPDH} and \textit{RPL13A} as house-keeping genes. All measurements were normalised against negative control samples harvested immediately after the intervention. \\
 \ILGene results are not significant, due to high variance. However, there is a trend of a sharp increase in \Yoda{} samples from d0 to d1 followed by a relaxation over following three days to original levels. This tendency is interesting, but it remains to be investigated, whether it translates to a \textit{de facto} increase in bioactive \IL protein. mRNA levels of \colone{} show a decreasing trend over time, while \colthree and \textsc{Fn}1 stayed largely the same (see Fig. \ref{fig:Yoda_Norm_PCR})\par
 
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width = 0.7\textwidth]{NormalYodaExp_PCR.png}
-	\caption{mRNA levels of selected gene products in naive MSCs after 30min chemical stimulation of \Piezo{}, harvested after 24, 48 or 72 hours (denoted by d1, d2 or d3, respectively). Normalized against d0, control.\hfill \newline
-		\textbf{a.)}: \coloneGene{}
+	\caption{mRNA levels of selected gene products in naive MSCs after 30min chemical stimulation of \Piezo{}, harvested after 24, 48 or 72 hours (denoted by d1, d2 or d3, respectively). Normalized against d0, control.
+	    \textbf{a.)}: \coloneGene{}
 		\textbf{b.)}: \ILGene{}
 		\textbf{c.)}: \colthreeGene{}
 		\textbf{d.)}: \FnGene, 
@@ -93,52 +92,51 @@ Using qRT-PCR, we also looked at mRNA representation while focusing on \coloneGe
 \begin{figure}
 	\centering
 	\includegraphics[width = \linewidth{}]{LongTerm_PCR.png}
-	\caption{RNA level analysis of different genes in MSCs seven days after exposure to chemical \Piezo{} agonist, following a modified version of the protocol described in chapter~\ref{sec:ChemicalStimulation}). Each sample is normalized against respective \Piezo{}-agonist control samples. We changed the media three days after intervention and supplemented the MEM\textalpha{} with either 0\% (Serum -) or 10\% FBS (Serum +). (n = 1)}
+	\caption{RNA level analysis of different genes in MSCs seven days after exposure to chemical \Piezo{}-agonist, following a modified version of the protocol described in chapter~\ref{sec:ChemicalStimulation}. Each sample is normalized against respective \Piezo{}-agonist control samples. We changed the media three days after intervention and supplemented MEM\textalpha{} with either 0\% (Serum -) or 10\% FBS (Serum: +) (n = 1).}
 	\label{fig:LongTerm_PCR}
 \end{figure}
 
 Because we found that intracellular \colone{} protein levels did not recover during our previously chosen time frame, we wanted to investigate whether the \Yoda{}-treated cells would reach a pre-intervention state after a longer duration. For this reason, we decided to repeat the experiment from before, but only harvesting the cells after seven days. Because in the experiment before we saw a change in cell morphology in \Yoda{}-treated samples, which indicates a decrease in cell viability (see Fig. \ref{pic:Yoda_Apop}), we adapted the protocol to ensure cell viability. The medium was changed three days after the intervention, where one group of cells received serum-free MEM\textalpha{} (S-), whereas the other half was administered MEM\textalpha{} with 10\% FBS (S+). For this experiment we only did qRT-PCR, due to very low yield in the serum-starved \Yoda{}-group (S-\textbackslash{}Y+)). All samples were pooled triplicates and normalized against negative \Yoda{}-control samples from day 7.\\
-Interestingly, in our experiment the RNA levels of \colone{} was still drastically lowered independent from FBS supplementation, with as low as 12\% in the serum-starved group. While \colthreeGene{} was also low, this could also be explained by a great variance, which we saw in the experiment before (see Fig. \ref{fig:Yoda_Norm_PCR}). \ILGene and \FnGene was slightly reduced. It is important to keep in mind, due to the experiment being a single measurement, this qualifies only as an exploratory experiment at best.\\
-However, there are some plausible indications. For example, it is interesting to note, that IL-6 seemed to recover completely to pre-intervention level, as implied in the experiment before. \\
-Furthermore, when looking at \coloneGene{} in serum-supplemented \Yoda{}-samples, while the PCR levels remained low (see Fig.~\ref{fig:LongTerm_PCR}), the cells proliferated and exhibited a spindle-like morphology, as opposed to sparse density and rounded morphology obeserved in serum-starved \Yoda{}-samples (see Fig.~\ref{pic:Cells_LongTerm} ). This implies that \Piezo{}-mediated downregulation of components and decrease of cell viability are mediated by two independent pathways, both downstream of \Piezo{}, as the decrease in cell viability discussed in the next chapter seems neutralized by addition of FBS, whereas the downregulation of \coloneGene{} seemingly is not.\\
+Interestingly, in our experiment the RNA levels of \colone{} were still drastically lowered independent from FBS supplementation, with as low as 12\% in the serum-starved group. While \colthreeGene{} was also low, this could also be explained by a great variance, which we saw in the experiment before (see Fig. \ref{fig:Yoda_Norm_PCR}). \ILGene{} and \FnGene{} was slightly reduced. It is important to keep in mind, due to the experiment being a single measurement, this qualifies only as an exploratory experiment at best. However, there are some plausible indications. For example, it is interesting to note, that \ILGene{} seemed to recover completely to pre-intervention level, as implied in the experiment before. \\
+Furthermore, when looking at \coloneGene{} in serum-supplemented \Yoda{}-samples, while the PCR levels remained low (see Fig.~\vref{fig:LongTerm_PCR}), the cells exhibited a spindle-like morphology and regained proliferative capacity, as opposed to the rounded and sparsely distributed cells observed in serum-starved samples (see Fig.~\ref{pic:Cells_LongTerm}). This implies that \Piezo{}-mediated downregulation of ECM components and decrease of cell viability are mediated by two independent pathways, both downstream of \Piezo{}, as the decrease in cell viability discussed in the next chapter seems neutralised by addition of FBS, whereas the downregulation of \coloneGene{} seemingly is not.\\
 One alternative explanation would be that the applied \Yoda{}-stimulus leads to a persistent change and possibly to differentiation.\par
 
-Sugimoto and colleagues suggested that \Piezo{} activation leads to osteogenic differentiation \cite{Sugimoto2017}. To test whether we reproduced their results by \Piezo{}-activation, we employed the same protocol, consisting of 30min 5\textmu{}M \Yoda{} intervention with the only experimental sample from day 3, which then are normalized against negative control samples harvested right after the intervention. As read-out method we chose qRT-PCR, following Sugimoto's paper, and biased our analysis against both early osteogenic genes like RUNX2 and late osteogenic genes like ALPL and SPP1 \cite{Marom2005, Creecy2013}. \par
+Sugimoto and colleagues suggested that \Piezo{} activation leads to osteogenic differentiation \cite{Sugimoto2017}. To test whether we reproduced their results by \Piezo{}-activation, we employed the same protocol, consisting of 30min 5\textmu{}M \Yoda{} exposure with the only experimental sample from day 3, which then are normalised against negative control samples harvested right after the intervention. As read-out method we chose qRT-PCR, following Sugimoto's paper, and focused our analysis against both early osteogenic genes like RUNX2 and late osteogenic genes like ALPL and SPP1 \cite{Creecy2013, Marom2005}. \par
 
 
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width = \linewidth]{Osteogenic_PCR_Yoda.png}
-	\caption{mRNA transcript levels of different late and early osteogenic markers, comparing MSCs 3 days after \Yoda{}-intervention (30min of 5\mul{}M \Yoda{} in MEM\textalpha{}) to \Yoda{} control (only MEM\textalpha{}) and normalized against \Yoda{} control samples, harvested directly after intervention ended (n=3, Student's t-test with Holm-Sidak multiple comparison correction).}
+	\caption{mRNA transcript levels of different late and early osteogenic markers, comparing MSCs 3 days after \Yoda{}-intervention (30min of 5\mul{}M \Yoda{} in MEM\textalpha{}) to \Yoda{} control (only MEM\textalpha{}) and normalised against \Yoda{} control samples, harvested directly after intervention ended (n=3, Student's t-test with Holm-Sidak multiple comparison correction).}
 	\label{fig:Osteo_PCR}
 \end{figure}
  
 
-Our results showed no significant differences. However, this does not mean, that we can exclude \Piezo{} implicated in osteogenic differentiation. One central aspect of Sugimoto's study was the existence of a certain "sweetspot" of hydrostatic pressure where osteogenic differentiation happens, after which increasing pressure would lead to insignificant results. It is plausible that the quality our \Piezo{} stimulus would need adaptation for successful reproduction of Sugimoto's results.
+Our results showed no significant differences. However, this does not mean, that we can exclude \Piezo{} implicated in osteogenic differentiation. One central aspect of Sugimoto's study was the existence of a certain "sweet-spot" of hydrostatic pressure where osteogenic differentiation happens, after which increasing pressure would lead to insignificant results. It is plausible that the quality our \Piezo{} stimulus would need adaptation for successful reproduction of Sugimoto's results.
 
 
 
-\section{Excursion: Biostability of \Yoda{} and \Piezo{} mediated apoptosis}
+\section{Biostability of \Yoda{} and \Piezo{} mediated decrease in cell viability}
 \label{sec:biostability}
 
 
-\begin{figure}
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width = \linewidth]{Yoda_Apoptosis.png}
-	\caption{Light microscopy picture of serum-starved cells 7 days after intervention with 0\textmu{}M (negative Control) or 5\textmu{}M (Yoda) chemical \Piezo{}-agonist.}
+	\includegraphics[width = 0.85\linewidth]{Yoda_Apoptosis.png}
+	\caption{Light microscopy picture of serum-starved cells 7 days after intervention with 0\textmu{}M (Control) or 5\textmu{}M (Yoda) chemical \Piezo{}-agonist.}
 	\label{pic:Yoda_Apop}
 \end{figure}
 
-We realised there was a continuous decrease in cell count in \Yoda{}-treated cells (see Fig.~\ref{pic:Yoda_Apop}). Next to \Piezo{} being implicated in this decrease in cell viability, an intrinsic cytotoxicity of \Yoda{} could also be an explanation. To test this hypothesis, Dr. Ulrich Blache exposed, in an explorative experiment, both \Piezo{}-KO and NoT cell lines to \Yoda{}, using a protocol similar to the one described in chapter ~\vref{sec:ChemicalStimulation}. The results of this experiment suggestested that the effect was \Piezo{} dependent (not shown). Further experiments are needed to make any conclusions. However, this observation could be explained with calpain activation, downstream of \Piezo{}, that has known pro-apoptotic effects through caspase-3 and caspase-12 activation \cite{Nakagawa2000, Altznauer2004}. Furthermore, there is evidence that relates different intracellular calcium concentration to a set of cellular mechanisms, including apoptosis. Here it might be worthwhile, to alter experimental \Yoda{} concentration to explore different regions of the continuous cellular process spectrum. Another thing to keep in mind is that \Yoda{} activity might not only vary with concentration but also with time.
+We realised there was a continuous decrease in cell count in \Yoda{}-treated cells (see Fig.~\ref{pic:Yoda_Apop}). Next to \Piezo{} being implicated in this decrease in cell viability, an intrinsic cytotoxicity of \Yoda{} could also be an explanation. To test this hypothesis, Dr. Ulrich Blache exposed, in an explorative experiment, both \Piezo{}-KO and NoT cell lines to \Yoda{}, using a protocol similar to the one described in chapter ~\vref{sec:ChemicalStimulation}. The results of this experiment suggestested that the effect was \Piezo{} dependent (not shown). Further experiments are needed to make any conclusions. However, this observation could be explained with calpain activation, downstream of \Piezo{}, that has known pro-apoptotic effects through caspase-3 and caspase-12 activation \cite{Altznauer2004, Nakagawa2000}. Furthermore, there is evidence that relates different intracellular calcium concentration to a set of cellular mechanisms, including apoptosis. Here it might be worthwhile, to alter experimental \Yoda{} concentration to explore different regions of the continuous cellular process spectrum. Another thing to keep in mind is that \Yoda{} activity might not only vary with concentration but also with time.
 
 \begin{figure}
 	\centering
 	\includegraphics[width = 0.4\linewidth{}]{Inkubationshypothese.png}
-	\caption{Western Blot of intracellular protein of MSCs one day after undergoing a modified protocol described in chapter~\ref{sec:ChemicalStimulation}. We altered both the amount of \Yoda{} in intervention medium and duration of \Yoda{} pre-incubation before being added to the cells. For all groups, the respective intervention medium was incubated for 8 hours at standard incubation conditions. One intervention medium was incubated with 5 \mul{}M \Yoda{} (8h Yoda Invervention), another intervention medium was supplemented with 5 \mul{}M \Yoda{} only after incubation, right before giving it to the cells (No Yoda Intervention) and third group was \Yoda{} control (Control).}
+	\caption{Intracellular protein analysis of MSCs one day after undergoing a modified version of the protocol described in chapter~\ref{sec:ChemicalStimulation}. We altered both the concentration of \Piezo{}-agonist \Yoda{} in intervention medium and duration of \Yoda{} incubation before being added to the cells. For all groups, the respective intervention medium was pre-incubated for 8 hours at standard incubation conditions. One intervention medium was pre-incubated with 5 \textmu{}M \Yoda{} (8h Yoda Intervention), another intervention medium was supplemented with 5 \textmu{}M \Yoda{} only after pre-incubation, right before giving it to the cells (No Yoda Intervention) and third group was \Yoda{} control (Control).}
 	\label{fig:Inkubationshypothese_Western}
 \end{figure}
 
-Our observations suggested that in standard incubation conditions \Yoda{} is transformed and loses its effect over time (not shown). To test this hypothesis, we employed a modified version of the protocol described in chapter~\ref{sec:ChemicalStimulation}. We altered both the amount of \Yoda{} in the intervention medium and duration of \Yoda{} pre-incubation before being added to the cells. For all groups, we introduced a pre-incubation period of 8 hours, durng which the respective intervention medium was incubated at standard incubation conditions. One intervention medium was incubated containing 5 \mul{}M \Yoda{} (8h Yoda Invervention), another intervention medium was supplemented with 5 \mul{}M \Yoda{} only after pre-incubation, right before giving it to the cells (No Yoda Intervention) and third group was \Yoda{} control (Control). We found that incubation of \Yoda{} during a certain amount of time seems to diminish its bioactivity completely. This has not been published knowledge, but should be considered in future study designs.
+Our observations suggested that in standard incubation conditions \Yoda{} is transformed and loses its effect over time (not shown). To test this hypothesis, we employed a modified version of the protocol described in chapter~\ref{sec:ChemicalStimulation}. We altered both the amount of \Yoda{} in the intervention medium and duration of \Yoda{} pre-incubation before being added to the cells. For all groups, we introduced a pre-incubation period of 8 hours, durng which the respective intervention medium was incubated at standard incubation conditions. One intervention medium was incubated containing 5 \mul{}M \Yoda{} (8h Yoda Invervention), another intervention medium was supplemented with 5 \mul{}M \Yoda{} only after pre-incubation, right before giving it to the cells (No Yoda Intervention) and third group was \Yoda{} control (Control). We found that incubation of \Yoda{} during a certain amount of time seems to diminish its bioactivity completely (see Fig.~\ref{fig:Inkubationshypothese_Western}). This has not been published knowledge, but should be considered in future study designs.
 
 \chapter{Discussion}
 
