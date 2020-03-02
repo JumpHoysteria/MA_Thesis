@@ -4,27 +4,32 @@
 \chapter{Material and Methods}
 
 \section{General information}
-All the liquids that contact the cell, were pre-warmed in a water-bath to limit cold-exposure. Unless stated otherwise, we worked under sterile conditions. By courtesy of Prof. Ivan Martin (University of Basel), we had access to human bone-marrow derived mesenchymal stem cells from pseudonymized patients. Incubation parameters are kept constant at 37 \degC{} and 5\% CO2 in humidified air. Light microscopy pictures of cells are taken using an EVOS inverted light micrscope (ThermoFisher).
+All the liquids that contact the cell, were pre-warmed in a water-bath to limit cold-exposure. Unless stated otherwise, we worked under sterile conditions. By courtesy of Prof. Ivan Martin (University of Basel), we had access to human bone-marrow derived mesenchymal stem cells from pseudonymized patients. Incubation parameters are kept constant at 37 \degC and 5\% CO\textsubscript{2} in humidified air. Light microscopy pictures of cells are taken using an EVOS inverted light micrscope (ThermoFisher).
 
 \section{Statistical Analysis}
 We either used Windows Excel or GraphPad Prism v8 for statistical analysis. The chosen test metric is indicated in every figure legend.
 
 \section{Cell Culture and Passaging}
 Cells are grown in growth medium under sterile conditions. Nunc\texttrademark{} EasYFlask\texttrademark{} Cell Culture Flasks with filters (ThermoFisher) were used for growing the cells. The media was changed every three days. Passaging was done at 80\% confluence using the following standard TE-protocol. First, the cells are washed with PBS. Second, 2ml Trypsin-EDTA (TE, maduzi) is added and the cells incubated for 3-10 minutes. Then, add 10ml MEM\textalpha{} with 10\% FBS and transfer cell solution to 15ml Falcon Tube. Centrifuge for 5 minutes at a speed of 500 rcf. Next, discard the supernatant and resuspend the cells in Growth Medium and seed according to application with typical seeding density being 10\textsuperscript{6} Cells / 75 cm\textsuperscript{2}. 
-Growth Medium consist of ROTI\textregistered{} Cell Eagle's MEM\textalpha{} with nucleosides and stable l-glutamine(ROTH), 10\% FBS (heat-inactivated, Thermo Fisher) and 5ng/ml Growth Factor FGF-2 (PeproTech).
+Growth Medium consist of ROTI\textregistered{} Cell Eagle's MEM\textalpha{} with nucleosides and stable l-glutamine(ROTH), 10\% FBS (heat-inactivated, ThermoFisher) and 5ng/ml Growth Factor FGF-2 (PeproTech).
 
 \section{Retroviral Transduction}
-From 100\% confluent cells, seed 800'000 cells in T25 according to standard protocol. On the next day, the medium was removed and 1ml of Polybrene Medium (MEM\textalpha{}, 5\% FBS, 1\mul{}/ml Polybrene (Sigma-Aldrich)) added. From here onward, Biosafety Level (BL) 2 measures were applied. Carefully, 1ml of virus construct to corresponding flask was added and incubated at 4 \degC for two hours, followed by addition of 3ml Compensation-Medium (3ml MEM\textalpha{}, 5\% FBS, 1\mul{}/ml Polybrene and 8 ng/ml FGF-2), after which the cells were incubated over night. On the next day, the medium was removed and 5ml standard Growth Medium added . On the next day, split 1:3.5 depending on confluence. On the day after, selection was started by removing old medium and adding Selection Medium (Growth Medium + 3\textmu{}g/ml Puromycin (Thermo Fisher Scientific)) and incubating the cells for 72 hours. After incubation, knock-out was pre-validated with comparing negative control (expected: low viability) to KO-cell-line (expected: high viability) under light microscope. Over the next days, the cells were split another three times until the virus particles are neutralized and the BL restrictions can be relaxed from BL2 to BL1. Efficiency of knock-out is  assessed with Western Blot (Protein) and qRT-PCR (mRNA). Then the cells are frozen or seeded according to need. 
+\label{sec:RetroVir}
+From 100\% confluent MSCs, three T25 flasks (Sigma-Aldrich) were seeded with 800'000 cells according to standard protocol. On the next day, the medium was removed and 1ml of Polybrene Medium (MEM\textalpha{}, 5\% FBS, 1\mul{}/ml Polybrene (Sigma-Aldrich)) added. From here onward, Biosafety Level (BL) 2 measures were applied. Carefully, 1ml of virus construct was added to corresponding flask and incubated at 4 \degC for 2 hours. This was then followed by addition of 3ml Compensation-Medium (3ml MEM\textalpha{}, 5\% FBS, 1\mul{}/ml Polybrene and 8 ng/ml FGF-2), after which the cells were incubated over night. On the next day, the medium was removed and 5ml standard Growth Medium added. On the next day, split 1:3.5 depending on confluence. On the day after, selection was started by removing old medium and adding Selection Medium (Growth Medium + 3\textmu{}g/ml Puromycin (Thermo Fisher Scientific)) and incubating the cells for 72 hours. Over the next days, the cells were split another three times until the virus particles are neutralized and the BL restrictions can be relaxed from BL2 to BL1. Efficiency of knock-out is  assessed with Western Blot (Protein) and qRT-PCR (mRNA). Then the cells are either frozen or seeded according to need. 
+
+Three different viral constructs were used (2 distinct \Piezo{} knock-out and one negative control, one per flask) using pre-made lentivirus, carrying a specific CRISPR/Cas9-system with puromycin resistance as the selection marker. The knock-out is defined through the construct used, resulting in cell lines P1-395, P1-555 and NoT. P1-395 describes the cell line with base deletion in \PiezoGene{}-gene at position 395, similarly P1-555 describes deletion at position 555 and NoT describes control for viral transduction with no putative mutation in genome.
+
 
 \section{RNA Analysis}
 \subsection{RNA Extraction}
 This was prepared in open space. Cells were either directly lysed in-well after PBS washing or lysed in the tube, after being collected from well and washed with PBS. Lysis-Buffer was supplemented with 1\% \textbeta-mercaptoethanol. The whole cell lysate was either frozen for later processing or directly processed. When freezing the lysate, the tube is shock-frozen in liquid nitrogen before transferred to -80 \degC freezer. When processing, the PureLink PCR Micro Kit (\product{Thermo Fisher, CN: K310250}) following manufacturer's protocol was used, dissolving the RNA in the final step with 20\mul{} of RNase-free Water (BioConcept). The final concentration of the sample was assessed using the Qubit RNA HS Assay Kit (ThermoFisher) with a new calibration each time a new working solution was prepared.
 
 \subsection{Reverse Transcription}
-This was prepared in open space. Unless stated otherwise, 300ng of RNA was transcribed per 40\mul{} total reaction volume using the High-Capacity cDNA Reverse Transcription Kit (Thermo Fischer) following supplier's instructions. \myworries{Insert program specification of Cindy cDNA2019}. Samples were either stored at -20 \degC or used. 
+This was prepared in open space. Unless stated otherwise, 300ng of RNA was transcribed per 40\mul{} total reaction volume using the High-Capacity cDNA Reverse Transcription Kit (Thermo Fischer) following supplier's instructions to produce cDNA. The samples were kept at 37 \degC for 2 hours followed by 5 min at 95 \degC with the thermal Mastercycler (Eppendorf) to terminate the generation of cDNA. Samples were either stored at -20 \degC or used directly. 
 
 \subsection{Quantitative Real-Time PCR Analysis}
-All real-time PCR analyses were performed on a StepOnePlus ThermoCycler real-time PCR system (Applied Biosystems) with a 96-well plate as a carrier device. Each reaction well contained a reaction volume of 2\mul{} sample cDNA and 8\mul{} Primer-specific PCR MasterMix (KAPA PROBE FAST MasterMix (KAPA Biosystems), TaqMan\textregistered{} Primer (ThermoFisher) and RNase-free Water). The C\textsubscript{t}-value (cycle threshold) value for each gene was determined using the automated threshold analysis in the StepOnePlus device. Data was evaluated using the comparative C\textsubscript{t}-Method with GAPDH and RPL13A as housekeeping genes.
+All real-time PCR analyses were performed on a StepOnePlus ThermoCycler real-time PCR system (Applied Biosystems) with a 96-well plate as a carrier device. Each reaction well contained a reaction volume of 2\mul{} sample cDNA and 8\mul{} Primer-specific PCR MasterMix (KAPA PROBE FAST MasterMix (KAPA Biosystems), TaqMan\textregistered{} Primer (ThermoFisher) and RNase-free Water). The cDNA was amplified using the following protocol: First, a denaturating stage where samples were kept at 95 \degC for 10
+min, followed by an annealing stage that consisted of 40 cycles of 95 \degC for 10sec and extending stage at 60 \degC for 30sec. All samples were run in technical triplicates. The C\textsubscript{t}-value (cycle threshold) value for each gene was determined using the automated threshold analysis in the StepOnePlus device. Data was evaluated using the comparative C\textsubscript{t}-Method with GAPDH and RPL13A as housekeeping genes.
 
 Investigated gene products and corresponding primers used are (Product Number TBA): 
 
@@ -32,31 +37,31 @@ Investigated gene products and corresponding primers used are (Product Number TB
 	Gene & Number \\ 
 	\hline 
 	\rule[-1ex]{0pt}{4ex}  &  \\ 
-	\textit{COL1A1} & Hs102314 \\ 
+	\textit{COL1A1} & Hs00164004\_m1 \\ 
 	\hline 
 	\rule[-1ex]{0pt}{2.5ex}  &  \\ 
-	\textit{COL3A1} & Hs102314 \\ 
+	\textit{COL3A1} & Hs009443809\_m1 \\ 
 	\hline 
 	\rule[-1ex]{0pt}{2.5ex}  &  \\ 
-	\textit{FN1} & Hs102314 \\ 
+	\textit{FN1} & Hs01549976\_m1 \\ 
 	\hline 
 	\rule[-1ex]{0pt}{2.5ex}  &  \\ 
-	\textit{IL-6} & Hs102314 \\ 
+	\textit{IL-6} & Hs00174131\_m1 \\ 
 	\hline 
 	\rule[-1ex]{0pt}{2.5ex}  &  \\ 
-	\textit{ALPL} & Hs102314 \\ 
+	\textit{ALPL} & Hs01029144\_m1 \\ 
 	\hline 
 	\rule[-1ex]{0pt}{2.5ex}  &  \\ 
-	\textit{RUNX1} & Hs102314 \\ 
+	\textit{RUNX2} & Hs00231692\_m1 \\ 
 	\hline 
 	\rule[-1ex]{0pt}{2.5ex}  &  \\ 
-	\textit{SPP1} & Hs102314 \\ 
+	\textit{SPP1} & Hs00959010\_m1 \\ 
 	\hline 
 	\rule[-1ex]{0pt}{2.5ex}  &  \\ 
-	\textit{GAPDH} & Hs102314 \\ 
+	\textit{GAPDH} & Hs02758991\_g1 \\ 
 	\hline 
 	\rule[-1ex]{0pt}{2.5ex}  &  \\ 
-	\textit{RPL13A} & Hs102314 \\ 
+	\textit{RPL13A} & Hs04194366\_g1 \\ 
 \end{tabular} 
 
 
@@ -66,7 +71,7 @@ After washing the cells with PBS, 0.5ml of TE(1X) was added to each well, after 
 The standard curve has been generated once by preparing multiple dilutions of a Bovine Serum Albumine standard with a known concentration of 2mg/ml (BioRad) with \textsc{Ripa}-Buffer. The dilutions, having concentrations of 0mg/ml, 0.25mg/ml, 0.5mg/ml, 0.75mg/ml, 1mg/ml, 1.5mg/ml and 2mg/ml BSA, were then measured in triplicates following the manufacturers standard procotol. The average of triplicates was calculated and a standard curve fitted to the data points that relates emission to BSA-concentration. 
 
 \subsection{Western Blotting}
-In new tube Laemmli-Buffer(6X) (BioRad) and sample was mixed to a final volume of 15\mul{}, then  vortexed 5 seconds and then cooked for 4-8 minutes at 95 \degC in ThermoCycler (i.e. cooking), where each tube contained the same amount of protein. Then the sample was loaded onto a 4–15\% Mini-PROTEAN TGX Stain-Free Protein Gel (BioRad) and resolved by electropphoresis at constant current of 35mA. Then the gel is wet-transferred onto PVDF Membrane (BioRad) using Trans-Blot Turbo Transfer System (BioRad). The membrane was then blocked in 5 wt\% low fat dry-milk (Migros) in TBST (i.e. blocking solution) for 1 hour. This is followed by incubation primary antibody either for 2 hours at room temperature or 14 hours at 4 \degC{} under constant shaking. After 3 times 10min washing in TBST, it is incubated in the matching secondary antibody, which is conjugated to HRP. Every time before immersion medium changes, the membrane was washed three times in TBST for 10 minutes. SuperSignal Ultra/Femto  detection reagents (Pierce) were used for visualization. The exposure time were manually set, to accommodate maximum signal while avoiding saturation. Only after successful imaging of the protein of interest, incubation for housekeeping protein was started. Quantification was done manually with Fiji (version 2.0.0-rc-69, Java 1.8) with the analysis workflow described elsewhere \cite{Miller2010}.
+In new tube Laemmli-Buffer(6X) (BioRad) and sample was mixed to a final volume of 15\mul{}, then  vortexed 5 seconds and then cooked for 4-8 minutes at 95 \degC in ThermoCycler (i.e. cooking), where each tube contained the same amount of protein. Then the sample was loaded onto a 4–15\% Mini-PROTEAN TGX Stain-Free Protein Gel (BioRad) and resolved by electropphoresis at constant current of 35mA. Then the gel is wet-transferred onto PVDF Membrane (BioRad) using Trans-Blot Turbo Transfer System (BioRad) with settings either High MW (1.3 A, 25V, 10min) for blot in Fig.~\vref{fig:KO-Verification}, and Mixed MW (1.3A, 25V, 7min) for the remaining. The membrane was then blocked in 5 wt\% low fat dry-milk (Migros) in TBST (i.e. blocking solution) for 1 hour. This is followed by shaken incubation primary antibody either for 2 hours at room temperature or 14 hours at 4 \degC{}. After 3 times 10min washing in TBST, the membrane is incubated in the matching secondary antibody, which is conjugated to HRP. Every time before immersion medium changes, the membrane was washed three times in TBST for 10 minutes. SuperSignal Ultra/Femto detection reagents (Pierce) were used for visualization (Femto for blot in Fig.~\vref{fig:KO-Verification}, Ultra for the remaining). The exposure time were manually set to accommodate maximum signal while avoiding saturation. Only after successful imaging of the protein of interest, incubation with primary housekeeping protein antibody was started. Quantification was done manually with Fiji (version 2.0.0-rc-69, Java 1.8) with the analysis workflow described elsewhere \cite{Miller2010}.
 
 
 
@@ -99,6 +104,8 @@ For seeding, we work sterile in the cell culture lab. Flowchambers are sterilise
 
 \subsection{Fluorescence staining and imaging}
 \label{sec:LiveImaging}
+
+The shear flow protocol consisted of first a flow rate of 0.1ml/min for 30s, followed by an increase to 7ml/min for 5s, after which it was relaxed to 0.1ml/min for the remainder of the measurement. The peak flow rate translates to a shear force 70 dyn/cm\textsuperscript{2}. 
 
 For each flow chamber two separate calcium imaging recordings were carried out in close temporal sequence to each other: The first recording was done using calcium-free medium. Upon completion of the first recording, the flow shear medium is exchanged for normal, calcium containing medium and the cells continuously flushed for 12 minutes with a total volume of 2.4 ml. After the flushing period, a second recording was done with the previously used flow rate protocol but this time with calcium containing medium. The sequence of first calcium-free and second calcium-containing medium is important, as reactive capability of the cells has to be demonstrated in the last measurement to rule out cell death as a possible explanation for lack of impulse response. 
 
